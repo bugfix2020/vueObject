@@ -1,18 +1,18 @@
 <template>
-    <el-main>Main</el-main>
+    <el-aside width="200px">Aside</el-aside>
 </template>
 
 <script>
     export default {
-        name: "cpnMain"
+        name: "cpnAside"
     }
 </script>
 
 <style scoped>
-    .el-main {
-        background-color: #E9EEF3;
+    .el-aside {
+        background-color: #D3DCE6;
         color: #333;
         text-align: center;
-        line-height: 160px;
+        line-height: 200px;
     }
 </style>

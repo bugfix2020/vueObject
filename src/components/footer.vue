@@ -1,18 +1,18 @@
 <template>
-    <el-main>Main</el-main>
+    <el-footer>Footer</el-footer>
 </template>
 
 <script>
     export default {
-        name: "cpnMain"
+        name: "cpnFooter"
     }
 </script>
 
 <style scoped>
-    .el-main {
-        background-color: #E9EEF3;
+    .el-footer {
+        background-color: #B3C0D1;
         color: #333;
         text-align: center;
-        line-height: 160px;
+        line-height: 60px;
     }
 </style>

@@ -1,38 +1,38 @@
 <template>
-    <cpnContain></cpnContain>
+    <el-container direction="vertical">
+        <cpnHeader></cpnHeader>
+        <el-container>
+            <cpnAside></cpnAside>
+            <el-container direction="vertical">
+                <cpnMain></cpnMain>
+                <cpnFooter></cpnFooter>
+            </el-container>
+        </el-container>
+    </el-container>
 </template>
 <script>
-    import cpnContain from "@/components/main";
+    //组件头部
+    import cpnHeader from "@/components/header";
+    //组件侧边栏
+    import cpnAside from "@/components/aside";
+    //组件主体
+    import cpnMain from "@/components/main";
+    //组件底部
+    import cpnFooter from "@/components/footer";
 
     export default {
         name: "index",
         components: {
-            cpnContain
+            cpnHeader,
+            cpnAside,
+            cpnMain,
+            cpnFooter
         }
     }
 </script>
 
 <style scoped>
-
-    .el-aside {
-        background-color: #D3DCE6;
-        color: #333;
-        text-align: center;
-        line-height: 200px;
-    }
-
-    .el-main {
-        background-color: #E9EEF3;
-        color: #333;
-        text-align: center;
-        line-height: 160px;
-    }
-
     body > .el-container {
         margin-bottom: 40px;
-    }
-
-    .el-container:nth-child(5) .el-aside {
-        line-height: 260px;
     }
 </style>
