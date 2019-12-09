@@ -1,14 +1,17 @@
+//引入vue
 import Vue from 'vue'
+//引入App.vue 入口
 import App from './App.vue'
-import VueRouter from 'vue-router'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+//引入路由文件
+import router from './router/index';
 
-
-Vue.use(VueRouter);
-Vue.use(ElementUI);
 Vue.config.productionTip = false
-
+Vue.prototype.test = function () {
+    console.log(2222)
+}
+/* eslint-disable no-new */
 new Vue({
     render: h => h(App),
-}).$mount('#app')
+    //在实例中使用路由
+    router,
+}).$mount('#app');
